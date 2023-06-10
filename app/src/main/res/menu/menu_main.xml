@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.taipeitravel.MainActivity">
+    <item
+        android:id="@+id/action_translate"
+        android:icon="@drawable/ic_translate"
+        android:orderInCategory="100"
+        android:title="@string/action_translate"
+        app:showAsAction="always" />
+</menu>
