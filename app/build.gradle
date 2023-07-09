@@ -19,10 +19,12 @@ android {
 
     buildTypes {
         debug{
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
             debuggable true
         }
         release {
-            minifyEnabled false
+            minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
@@ -65,17 +67,15 @@ dependencies {
 
     //retrofit
     implementation 'com.squareup.retrofit2:retrofit:2.9.0'
-    // Retrofit with Moshi Converter
-    implementation 'com.squareup.moshi:moshi-kotlin:1.13.0'
     implementation 'com.google.code.gson:gson:2.8.9'
     // Retrofit with Moshi Converter
     implementation 'com.squareup.retrofit2:converter-moshi:2.9.0'
     implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
     //coroutines
-    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.4'
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.1'
 
     //網路API應用
-    implementation 'com.squareup.okhttp3:okhttp:4.10.0'
+    implementation 'com.squareup.okhttp3:okhttp:4.11.0'
     implementation 'com.squareup.okhttp3:logging-interceptor:4.10.0'
 
     // Android Compose
